@@ -34,7 +34,7 @@ If you already have an ESP32 microcontroller and some TFT or LCDs laying around,
 
 This project requires a 3D printer to generate the parts needed for the body. But I build an early prototype out of cardboard so it’s up to you.
 
->> Parts to build cheApR:
+# Parts to build cheApR:
 for the frame:
 * A few pairs of second hands or cheap sunglasses (for the lenses)
 * 2 x 1.54 LCDs based on the ST7789 driver
@@ -49,8 +49,8 @@ for the frame:
 
 The first level of “Fun”
 
->> Add an ESP32 camera to spice up your build
-•  I recommend the ESP-EYE from Espressif it doesn’t have the same camera issues as the ESP32CAM. 
+# Add an ESP32 camera to spice up your build
+*  I recommend the ESP-EYE from Espressif it doesn’t have the same camera issues as the ESP32CAM. 
 but use whatever model you want as long as it is an esp32 based one.
 
 More info here
@@ -58,15 +58,15 @@ More info here
 
 The second level of Fun & Pain
 
->> Add an ESP32 Headtracker
+# Add an ESP32 Headtracker
 
-• I recommend the M5Stack Nano Lite for size, but any ESP32 Board should do.
-• Even though the M5Stack has a built-in MPU, but I recommend using the MPU6050 gyroscope for ease of use
+* I recommend the M5Stack Nano Lite for size, but any ESP32 Board should do.
+* Even though the M5Stack has a built-in MPU, but I recommend using the MPU6050 gyroscope for ease of use
 DOWNLOAD HERE
 
 There are also plenty of other project that do it better
-•
-•
+*
+*
 
 Now That you know which parts are needed to build cheApR, follow the steps below to set up Arduino and Processing.
 
