@@ -1,10 +1,10 @@
-## Welcome to GitHub Pages
+# Welcome to GitHub Pages
 
 What is cheApR?
 
 cheApR is an open-source Augmented Reality goggles system that you can build easily with the low-cost ESP32 microcontroller from Espressif and two off the shelves LCD displays.
 
-## Why did I build it:
+# Why did I build it:
 
 This project began when I saw this AR goggles project from […] on Youtube. I did a quick google search to learn more about this amazing device. Sadly like every cutting-edge hardware, it is hard and pricey to put your hands on the early models, so I decided to try to build one for myself.
 
@@ -13,7 +13,7 @@ A few projects inspired me while I was doing some early research, but none were 
 *
 
 
-## Is it easy to DIY:
+# Is it easy to DIY:
 
 I tried my best to make this project as easy as possible to build even for beginners. But it requires some intermediate coding and circuit building skills to complete it. You will also need a 3D printer to print all the necessary parts I said it would be easy, but believe me, you’ll be happy to play with this thing once you’re done
 
@@ -21,7 +21,15 @@ I tried my best to make this project as easy as possible to build even for begin
 
 This project is a proof of concept. It uses parts that can be easily ordered online. It is not fast, the total resolution is only 480x240px, it doesn’t have an HD display, sound, or any of the fancy things you see currently on the market. But it is yours to do whatever you want with, it is fully open. Just don’t steal it, it’s not cool.
 
- 
+ PROS | CONS
+------------ | -------------
+Resolution 480x240| Lenses hard to find
+Full color| Dropped frames
+Unthetered| A little heavy
+Amazing refresh rate| Content from cell 2
+3H Playtime/8H Standby| Content from cell 2
+Content in the first column | Content in the second column
+
 
 ## I’M NOT AN ENGINEER
 It may come as a surprise but I have no engineering nor electronics background, which means I will use my own way to explain things that I often don’t understand myself. But you read until here so it means you are ready to proceed.
@@ -78,32 +86,32 @@ Myminifactory
 Software prep Arduino
 “Arduino is an open-source electronics platform based on easy-to-use hardware and software.”
 
-• Arduino IDE: Download here
-• Esp32: Download here > or easy setup with Arduino IDE boards Manager
-• Arduino Esp32FS: download here
-• LittleFS: Download here
-• M5Stack Library: Download here
-• ESP32 Cam Webserver: Download here
-• ESp32-BLE-Combo: Download here
-• Button Fever: Download here
+* Arduino IDE: Download here
+* Esp32: Download here > or easy setup with Arduino IDE boards Manager
+* Arduino Esp32FS: download here
+* LittleFS: Download here
+* M5Stack Library: Download here
+* ESP32 Cam Webserver: Download here
+* ESp32-BLE-Combo: Download here
+* Button Fever: Download here
 
 Software prep Processing
 “Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.”
 
-• Processing: Download here
+* Processing: Download here
 Once you’ve installed it go to File > Examples > Add Examples > libraries
 Search and install the following libraries
 * Video
-* ControlP5: Download and install from Source
-* IPCapture: Download and install from Source
-* nyar4psg: Download and install from Source
-* OBJLoader: Download and install from Source
-* OpenCV for processing: Download and install from Source
-* PixelFlow: Download and install from Source
-* ToxicLibs: Download and install from Source
+* ControlP5: [Download and install from Source]()
+* IPCapture: [Download and install from Source]()
+* nyar4psg: [Download and install from Source]()
+* OBJLoader: [Download and install from Source]()
+* OpenCV for processing: [Download and install from Source]()
+* PixelFlow: [Download and install from Source]()
+* ToxicLibs: [Download and install from Source]()
 
 
-LovyanGFX and ScreenShotReceiver
+### LovyanGFX and ScreenShotReceiver
 I’ve always wanted to build something like cheApR. but I could not get any decent frame rate on any of my previous prototypes. Then one day I stumbled upon a post on Reddit showing someone sending JPG data to an ESP32 at incredible speed. It blew me away and I knew I had to give it a go. This post led me to this blog post by HomemadeGarbage. After installing lovyanGFX and running some initial tests on a TTGO Display ESP32 microcontroller, I instantly knew lovyanGFX was steps ahead of any LCD graphics libraries, it is fast, quite easy to use.
 
 But let’s talk about the most amazing work by Lovyan03 his ESP32_ScreenShotReceiver experiment. According to him, this is what it does: “The screen of the PC is converted to JPEG and transmitted by TCP, and received and displayed by ESP32.”. For me it does a lot more, it free any makers to build more powerful intelligent apps because the ESP32 is now only a passive tool and the heavy lifting is done by the sender app. 
@@ -113,29 +121,42 @@ LovyanGFX Github > Follow the instructions to install it.
 Easier method > Arduino IDE > Tools > Manage libraries… > Search: LovyanGFX > install.
 
 ScreenShotSender > Follow the instructions to install it.
-[At this time screenshotSender is only available for PC but no worry, I wrote a buggier version that should run on your Mac/Pc/RaspberryPi machine, go to the Processing section to give it a try.]
+(At this time screenshotSender is only available for PC but no worry, I wrote a buggier version that should run on your Mac/Pc/RaspberryPi machine, go to the Processing section to give it a try.)
 
  
 
 Download cheApR AR suite
 You will find everything you need in here to get started with your cheApR goggles. I wrote it using Processing because it allows me to easily run and test the codes on different operating systems.
 
-* cheApR ScreenShotSender: my version of Lovyan03 ScreenShotSender app
-* cheApR video: Easy way to transfer MP4 videos from your machine
-* cheApR Drawing: Simple demo on how to draw on your device
-* cheApR Webcam: Send webcam image, can be used with the Snapchat app, etc
-* cheApR AR (ESP-EYE needed): Use this example to read AR Markers and display 3D models (very slow and buggy)
-* cheApR 3D world (M5Stack HeadTracker needed): This setup allows you to navigate 3D worlds. 
+* [cheApR ScreenShotSender: my version of Lovyan03 ScreenShotSender app]()
+* [cheApR video: Easy way to transfer MP4 videos from your machine]()
+* [cheApR Drawing: Simple demo on how to draw on your device]()
+* [cheApR Webcam: Send webcam image, can be used with the Snapchat app, etc]()
+* [cheApR AR (ESP-EYE needed): Use this example to read AR Markers and display 3D models (very slow and buggy)]()
+* [cheApR 3D world (M5Stack HeadTracker needed): This setup allows you to navigate 3D worlds.]()
 
 Make sure to read the README.txt files contained in each folder.
 
-Follow this link to my Github and download the package.
+[Follow this link to my Github and download the package.]()
 
 As I previously said I’m not the greatest coder in the world, so if you find a way to make any of the codes faster, please come to my Discord folder or fork it.
 
-Breadboard prototype
+# Breadboard prototype
 Assemble the circuit in the way shown in the image below.
+ 
+ 
+### Connections for the displays
 
+ Display Right | Display Left
+------------ | -------------
+GND| GND
+VCC = 3v3| VCC = 3v3
+SCL = 17| SCL = 22
+SDA = 2| SDA = 21
+CS = 12| CS = 32
+DC = 13| DC = 27
+RST = 15| RST = 33
+BL = 25 | BL = 16
  
 
 once done, compile and upload the codes for cheApR.
