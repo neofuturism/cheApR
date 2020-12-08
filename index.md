@@ -159,8 +159,8 @@ Assemble the circuit in the way shown in the image below.
 ------------ | -------------
 GND| GND
 VCC = 3v3| VCC = 3v3
-SCL = 17| SCL = 22
-SDA = 2| SDA = 21
+SCL = 17| SCL = 23
+SDA = 2| SDA = 26
 CS = 12| CS = 32
 DC = 13| DC = 27
 RST = 15| RST = 33
