@@ -22,8 +22,8 @@ struct LGFX_DisplayB
 {
   static constexpr spi_host_device_t spi_host = VSPI_HOST;
   static constexpr int dma_channel = 2;
-  static constexpr int spi_sclk = 22;   //SCL_PIN
-  static constexpr int spi_mosi = 21;   //SDA_PIN
+  static constexpr int spi_sclk = 23;   //SCL_PIN
+  static constexpr int spi_mosi = 26;   //SDA_PIN
   static constexpr int spi_miso = -1;   //NOT NEEDED
   static constexpr int spi_dlen = 8;
 };
